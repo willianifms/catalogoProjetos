@@ -15,7 +15,7 @@ body {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 300px;
     padding: 20px;
-    text-align: center;
+    font-size: 20px;
     opacity: 0;
     transform: translateY(20px);
     animation: appear 1s forwards;
@@ -30,10 +30,24 @@ body {
   
   .card-header h1 {
     margin: 0;
+    transition: color 0.3s;
   }
   
   .card-header img {
-    width: 30px;
+    width: 11rem;
+    transition: transform 0.3s;
+  }
+
+  .card-header p {
+   padding: 4px, 4px;
+  }
+  
+  .card-header:hover h1 {
+    color: #ff9900; /* Cor de destaque ao passar o mouse */
+  }
+  
+  .card-header:hover img {
+    transform: scale(1.1); /* Efeito de escala ao passar o mouse */
   }
   
   .card-body p {
@@ -44,6 +58,15 @@ body {
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
     }
   }
   
