@@ -16,12 +16,15 @@ body {
     width: 300px;
     padding: 20px;
     text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: appear 1s forwards;
   }
   
   .card-header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 20px;
   }
   
@@ -30,11 +33,17 @@ body {
   }
   
   .card-header img {
-    width: 10rem;
+    width: 30px;
   }
   
   .card-body p {
     margin: 10px 0;
-    text-align: justify;
+  }
+  
+  @keyframes appear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
