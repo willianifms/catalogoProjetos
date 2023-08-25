@@ -21,7 +21,7 @@ body {
   .card-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 20px;
   }
   
@@ -30,10 +30,11 @@ body {
   }
   
   .card-header img {
-    width: 3em;
+    width: 10rem;
   }
   
   .card-body p {
     margin: 10px 0;
+    text-align: justify;
   }
   
