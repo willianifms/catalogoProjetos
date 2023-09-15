@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #121212;
     color: #fff;
     margin: 0;
@@ -34,6 +34,7 @@ body {
   }
   
   .card-header img {
+    border-radius: 10px;
     width: 11rem;
     transition: transform 0.3s;
   }
@@ -43,8 +44,9 @@ body {
   }
   
   .card-header:hover h1 {
-    color: #ff9900; /* Cor de destaque ao passar o mouse */
+    color: #ea0000; /* Cor de destaque ao passar o mouse */
   }
+
   
   .card-header:hover img {
     transform: scale(1.1); /* Efeito de escala ao passar o mouse */
@@ -53,18 +55,25 @@ body {
   .card-body p {
     margin: 10px 0;
   }
+  .card-body span{
+    color: #ea0000;
+  }
 
   .btn{
+    margin-top: 5px;
+    padding: 10px 20px;
     background-color: rgb(138, 43, 226);
     color: #fff;
     text-align: center;
     font-size: 22px;
     width: 100%;
-
+    border: none;
+    border-radius: 10px;
   }
 
   .btn:hover{
     background-color: rgb(157, 85, 225);
+    color: #ea0000;
   }
   
   @keyframes appear {
