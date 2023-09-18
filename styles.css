@@ -36,6 +36,12 @@ body {
     margin-bottom: 5%;
     transition: color 0.3s;
   }
+
+  a{
+    text-decoration: none !important ;
+    color:  rgb(138, 43, 226);
+   margin-bottom: -1%;
+  }
   
   .card-header img {
     display: flex;
@@ -43,6 +49,7 @@ body {
     text-align: center;
     align-items: center;
     border-radius: 10px;
+    height: 11rem;
     width: 11rem;
     transition: transform 0.3s;
   }
