@@ -126,3 +126,26 @@ main {
     }
   }
   
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+.navbar .logo {
+    font-size: 1.5em;
+    color: #fff;
+}
+.navbar .social-icons {
+    display: flex;
+}
+.navbar .social-icons a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.navbar .social-icons a:hover {
+    color: #800080;
+}
