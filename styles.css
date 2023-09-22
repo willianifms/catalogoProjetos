@@ -1,8 +1,13 @@
-body {
+body{
+  margin: 0;
+}
+
+
+main {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #121212;
     color: #fff;
-    margin: 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,10 +57,10 @@ body {
     transform: scale(1.1); /* Efeito de escala ao passar o mouse */
   }
   
-  .card-body p {
+  .card-main p {
     margin: 10px 0;
   }
-  .card-body span{
+  .card-main span{
     color: #ea0000;
   }
 
@@ -92,3 +97,26 @@ body {
     }
   }
   
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+.navbar .logo {
+    font-size: 1.5em;
+    color: #fff;
+}
+.navbar .social-icons {
+    display: flex;
+}
+.navbar .social-icons a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.navbar .social-icons a:hover {
+    color: #800080;
+}
